@@ -23,6 +23,7 @@ tensor 可以直接赋值维数，成为多维矩阵。
 - y = x[{{2},{}}]   matrix;
 - y = x[2] dimension reduced matrix.
 - y = x[{2,{}}] dimension reduced matrix.
+
 ## Tensor 赋值：
 - y = x 
 - y = torch.Tensor(x) -- 同上，(share storage 空间)
@@ -37,11 +38,11 @@ tensor 可以直接赋值维数，成为多维矩阵。
 - x:storage()
 - x:storageOffset()
 
-## share内存空间的操作
+## Share内存空间的操作
 - y = x:transpose() 
 - y = x:t()  -- 2D
 
-# copy processes
+# Copy 内存空间的操作
 - torch.reshape(x);  math() , copy space.
 - x:select(2,3) ;  share space.
 
